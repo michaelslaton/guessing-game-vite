@@ -1,0 +1,36 @@
+:root {
+  --font-color: white;
+  --background-color: rgb(12, 10, 29);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+p, li, figcaption {
+  text-wrap: pretty;
+  max-width: 65ch;
+}
+
+.italic {
+  font-style: italic;
+}
+
+abbr {
+  border-bottom: none !important;
+  text-decoration: none !important;
+}
+
+img {
+  border-style: none;
+}
+
+body {
+  color: var(--font-color);
+  background-color: var(--background-color);
+}

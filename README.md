@@ -1,0 +1,3 @@
+The first thing I ever made in JavaScript that worked and was completely out of my head was a guessing game. Super simple concept, but of course I over complicated it because I didn't know what I was doing. Later on I remade it using react once I learned react. It was ok, but even looking at it now, I know better ways to go about it. 
+
+I'm going to remake it for a 3rd time now using Vite and my updated knowledge as a developer. I also want to take this opportunity to try out some things I've had in my head for awhile to add a bit of style to an application.
