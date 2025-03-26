@@ -1,0 +1,18 @@
+.game-button {
+  background-color: var(--game-button-bg);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 2rem;
+  padding: .5rem 2rem;
+  border: 0;
+  border-radius: 8px;
+  margin: 1rem .5rem;
+  cursor: pointer;
+}
+.game-button.right {
+  background-color: var(--correct-green);
+}
+.game-button.wrong {
+  background-color: var(--wrong-red);
+}

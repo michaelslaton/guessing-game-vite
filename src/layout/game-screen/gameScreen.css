@@ -1,0 +1,32 @@
+.game-screen {
+  width: 100%;
+}
+
+.game-screen__title {
+  width: 100%;
+  text-align: center;
+}
+.game-screen__title > h1 {
+  text-transform: uppercase;
+}
+
+.reset-button {
+  background-color: black;
+  border: 1px solid white;
+  color: white;
+  padding: .5rem 2rem;
+  border-radius: 8px;
+  margin: 0 .5rem;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+.reset-button:is(:hover) {
+  background-color: red;
+  border-color: black;
+  color: black;
+}
+.reset-button:is(:active) {
+  background-color: red;
+  border-color: white;
+  color: white;
+}
