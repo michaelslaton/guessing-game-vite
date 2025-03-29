@@ -11,23 +11,13 @@ const GameScreen = () => {
   const [ gameState, setGameState ] = context;
 
   const handleClick = (): void => {
-    const newTrue = randomizer();
+    const newTrue = randomizer(3);
     let newState: GameStateType = { ...gameState };
 
-    if(newTrue === 1) newState = {
+    newState = {
       ...newState,
-      previousSet: undefined,
-      currentSet: {one: true, two: false, three: false},
-    };
-    else if(newTrue === 2) newState = {
-      ...newState,
-      previousSet: undefined,
-      currentSet: {one: false, two: true, three: false},
-    };
-    else if(newTrue === 3) newState = {
-      ...newState,
-      previousSet: undefined,
-      currentSet: {one: false, two: false, three: true},
+      previousWinner: undefined,
+      currentWinner: newTrue,
     };
 
     newState.wins = 0;
@@ -46,9 +36,9 @@ const GameScreen = () => {
         <h2>Wins: {gameState.wins} | Losses: {gameState.losses}</h2>
 
         <div className='game-screen__game-buttons-wrapper'>
-          <GameButton value='one'/>
-          <GameButton value='two'/>
-          <GameButton value='three'/>
+          <GameButton value={1}/>
+          <GameButton value={2}/>
+          <GameButton value={3}/>
         </div>
 
         <button

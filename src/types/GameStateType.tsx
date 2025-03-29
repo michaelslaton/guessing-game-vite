@@ -1,9 +1,7 @@
-import { SetType } from "./SetType";
-
 export type GameStateType = {
   wins: number;
   losses: number;
-  currentSet: SetType | undefined;
-  previousSet: SetType | undefined;
-  clicked: string | undefined;
+  currentWinner: number | undefined;
+  previousWinner: number | undefined;
+  clicked: number | undefined;
 };
