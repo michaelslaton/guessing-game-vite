@@ -1,9 +1,11 @@
 :root {
   --font-color: white;
-  --background-color: rgb(12, 10, 29);
-  --correct-green: rgb(0, 255, 0);
+  --background-color: #0c0a1d;
+  --correct-green: #00ff00;
   --wrong-red: red;
-  --game-button-bg: rgb(119, 0, 255);
+  --game-button-bg: #7700ff;
+  --gamescreen-bg: #18123f;
+  --background-gradient: linear-gradient(-45deg, #0d85a0, #400b81, #8d078d, #087b8a);
 }
 
 * {
@@ -40,4 +42,22 @@ img {
 body {
   color: var(--font-color);
   background-color: var(--background-color);
+}
+
+body {
+    background: var(--background-gradient);
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
 }

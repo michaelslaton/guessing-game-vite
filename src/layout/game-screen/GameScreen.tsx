@@ -28,27 +28,29 @@ const GameScreen = () => {
   };
 
   return (
-    <div className='game-screen'>
-      <div className='game-screen__title'>
+    <div className='game-screen__wrapper'>
+      <div className='game-screen'>
+        <div className='game-screen__title'>
+          <h1>!! Mike's Guessing Game !!</h1>
 
-        <h1>!! Mike's Guessing Game !!</h1>
-
-        <h2>Wins: {gameState.wins} | Losses: {gameState.losses}</h2>
-
-        <div className='game-screen__game-buttons-wrapper'>
-          <GameButton value={1}/>
-          <GameButton value={2}/>
-          <GameButton value={3}/>
+          <h2>Wins: {gameState.wins} | Losses: {gameState.losses}</h2>
         </div>
+        <div className='game-screen__controls'>
+          <div className='game-screen__game-buttons-wrapper'>
+            <GameButton value={1}/>
+            <GameButton value={2}/>
+            <GameButton value={3}/>
+          </div>
 
-        <button
-          className='reset-button'
-          onClick={()=> handleClick()}
-        >
-          Reset
-        </button>
-
+          <button
+            className='reset-button'
+            onClick={()=> handleClick()}
+          >
+            Reset
+          </button>
+        </div>
       </div>
+      <div className='border'/>
     </div>
   );
 };
