@@ -1,5 +1,9 @@
 .game-screen {
-  width: 100%;
+  width: 50%;
+  background: rgb(37, 26, 104);
+  clip-path: polygon(10% 0%, 100% 10%, 90% 90%, 0% 100%);
+  padding: 2rem;
+  margin: 3rem auto;
 }
 
 .game-screen__title {
