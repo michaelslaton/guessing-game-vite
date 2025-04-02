@@ -31,6 +31,14 @@
 .game-screen__title > h1 {
   text-transform: uppercase;
 }
+.game-screen__title > h2 {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  font-size: 1.3rem;
+  text-transform: uppercase;
+}
 
 .game-screen__controls {
   text-align: center;
@@ -40,21 +48,19 @@
 
 .reset-button {
   background-color: black;
-  border: 1px solid white;
   color: white;
   padding: .5rem 2rem;
   border-radius: 8px;
   margin: 0 .5rem;
   cursor: pointer;
   text-transform: uppercase;
+  border: none;
 }
 .reset-button:is(:hover) {
   background-color: red;
-  border-color: black;
   color: black;
 }
 .reset-button:is(:active) {
   background-color: red;
-  border-color: white;
   color: white;
 }

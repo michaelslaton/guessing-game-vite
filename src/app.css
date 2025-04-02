@@ -1,10 +1,10 @@
 :root {
   --font-color: white;
-  --background-color: #0c0a1d;
+  --background-color: #1b1742;
   --correct-green: #00ff00;
   --wrong-red: red;
-  --game-button-bg: #7700ff;
-  --gamescreen-bg: #18123f;
+  --game-button-bg: #00a2ff;
+  --gamescreen-bg: #2a3194;
   --background-gradient: linear-gradient(-45deg, #0d85a0, #400b81, #8d078d, #087b8a);
 }
 

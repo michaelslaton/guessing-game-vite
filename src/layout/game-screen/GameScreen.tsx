@@ -31,7 +31,7 @@ const GameScreen = () => {
     <div className='game-screen__wrapper'>
       <div className='game-screen'>
         <div className='game-screen__title'>
-          <h1>!! Mike's Guessing Game !!</h1>
+          <h1>~ Mike's Guessing Game ~</h1>
 
           <h2>Wins: {gameState.wins} | Losses: {gameState.losses}</h2>
         </div>
